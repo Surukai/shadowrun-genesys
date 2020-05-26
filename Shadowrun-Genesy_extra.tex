@@ -1,42 +1,319 @@
 \documentclass{book}
 
-\usepackage[background]{Genesys}
+\usepackage[background]{genesys}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{tabu}
+\usepackage{caption}
+\usepackage{float}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=orange,
+}
 
-
+\makeindex
 %\geometry{paperheight=13in}
 \begin{document}
 
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{images/GenesysLogo}
+	\includegraphics[width=0.5\linewidth]{"images/SR5 Logo Full"}
+\end{center}
+
+\section*{\centering{\hspace{0.4\linewidth}Extra materials}}
+
+\begin{center}
+	\large For Shadowrun Genesys conversion by Chaithi/Surukai
+\end{center}
+
+
+
 
 \chapter{Introduction}
+%\begin{wrapfigure}{r}{0.5\textwidth}
+%	\begin{center}
+%	\includegraphics[width=1.0\linewidth]{"images/SR5_Gun Battle"}
+%	\end{center}
+%	\caption{Gun battle}
+%\end{wrapfigure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{"images/SR5_City_Berlin"}
+%	\caption{}
+	\label{fig:sr5gun-battle}
+\end{figure}
 
+\begin{multicols}{2}
+This is Surukai's expansion on things not (currently) present in the Chaithi Shadowrun Genesys Conversion but might be useful for other Shadowrun conversions as well.
 
+For more information on the base Genesys Shadowrun conversion, see \url{https://shadowrun.gamergadgets.net}. \index{Chaithi}
 
-\chapter{New Archetypes}
+The purpose of this document is to add/suggest new features and parts in addition to add items used for the \textit{Boston Lockdown} campaign book.
 
+\subsection{Contact}
+Surukai can be reached over at Chaithi's Shadowrun Genesys discord or directly at \textbf{Surukai\#2470} \index{Author}
 
-\section{Metasapients}
+It is also possible to use \textit{surukai@gmail.com}
 
-
-\section{Shapeshifters}
-
-\subsection{Great cat}
-\begin{multicols}{2}[
-Such as Tiger, Lions or even Jaguars even if they aren't technically \emph{panthera}. ]
-
-\Characteristics{3}{2}{1}{2}{2}{2}
-
-\vspace{1em}
-\Derived{Wound threshold}{12+Brawn}
-\Derived{Strain threshold}{8+Will}
-
-\vspace{1em}
+\subsection{Game testers}
+\begin{itemize}[noitemsep]
+	\item[--] Angelswing
+	\item[--] Caweman
+	\item[--] Tess
+	\item[--] RL
+\end{itemize}
 
 \end{multicols}
 
+
+
+
+\vfill
+
+\small Genesys and its logo are trademarks of Fantasy Flight Games in the U.S.A. and other countries. All Fantasy Flight Games characters and character names, and the distinctive likenesses thereof, are trademarks of Fantasy Flight Games. www.FantasyFlightGames.com.
+
+\small This work contains material that is copyright Fantasy Flight Games and/or other authors. All other original material in this work is copyright 2020 by Surukai.
+
+\small Shadowrun names and concept copyright (C) 2020 The Topps Company, Inc. All Rights Reserved. Shadowrun and Matrix are registered trademarks and/or trademarks ofThe Topps Company, Inc., in the United States and/or other countries.
+
+\small This is a fan project and is presented without financial compensation.This is not intended to be a challenge to any
+copyright.
+\newpage
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+
+\chapter{New Archetypes}
+The new archetypes here are based on the metavariants, metasapients and others found in \textbf{Run Faster} for Shadowrun 5th edition or \textbf{Runner's Companion} (Shadowrun 4). Some updates of abilities are taken from Shadowrun 6th edition like Vampire being vulnerable to wood instead of silver.
+
+\section{Metasapients}
+Metasapients\index{Metasapients} are all non-metahumans and can generally not benefit from cyberware or bioware unless they are of exceptionally high quality and customization. Some metasapients are awakened and cannot become technomancers.
+
+\begin{multicols}{2}
+	\subsection{Naga}\index{Naga}
+	Giant anaconda or danger noodle. Nagas are huge sentient awakened snakes, primarily found in South America.
+	
+	\Characteristics{3}{1}{2}{2}{2}{3}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 14+Brawn
+		\item \textbf{Strain threshold:} 10+Will
+		\item \textbf{Starting Experience:} 65xp
+		\item \textbf{Starting Skills:} Start with one rank Survival and one rank in Athletics.
+		\item \textbf{Natural Weapons:} \textit{Bite}, Damage +2, Crit 4, Pierce 1, Venom (see below)
+		\item \textbf{Venom} Target must make an immidiate hard (\DifficultyDie \DifficultyDie \DifficultyDie) \textbf{Resiliance} check. If they fail the suffer 5 wounds +1 additional per \Threat. A \Despair means they have to make the check again next turn.
+		\item \textbf{Cold blooded} Upgrade the difficulty of all checks when exposed to cold temperature.
+		\item \textbf{Snake} Nagas have no arms or legs and cannot use equipment requiring limbs. They can still push buttons or manipulate things with their snout and tongue to some extent.
+	\end{itemize}
+	
+	
+	\subsection{Centaur}\index{Centaur}
+	Centaurs have four legs and two arms.
+	
+	\Characteristics{3}{1}{1}{2}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 12+Brawn
+		\item \textbf{Strain threshold:} 10+Will
+		\item \textbf{Starting Experience:} 60xp
+		\item \textbf{Starting Skills:} Start with one rank Athletics.
+		\item \textbf{Natural Weapons:} \textit{Kick}, Damage +2, Crit 5, Knockdown, Disorient 3
+		\item \textbf{Charge} Once per turn a Centaur can move a short distance as an Incidental unless immobilized. When moving and attacking with natural weapons they can activate the Knockdown quality for \Advantage.
+		\item \textbf{Thermographic vision:} Remove \SetbackDie \SetbackDie incurred from dim or no light.
+	\end{itemize}
+\end{multicols}
+\mbox{ }
+\begin{multicols}{2}
+	\subsection{Artifical Intelligene}
+	A.I. lives in the Matrix and lacks a physical body in the classical sense. AI interact with the world through the matrix or by being jumped in drones.
+	
+	\Characteristics{-}{-}{3}{1}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 8+Brawn
+		\item \textbf{Strain threshold:} 9+Will
+		\item \textbf{Starting Experience:} 65xp
+		\item \textbf{Starting Skills:} Start with one rank Computers.
+		\item \textbf{Matrix home node:} While in the AI home node all ice and icebreakers count as one higher. Moving to a new home node temporarily reduces all characteristics to 1 for 24hours and negates the \textit{Improved hot sim} ability for a week.
+		\item \textbf{Improved hot sim: } Hot sim upgrades the check twice instead of once. 
+	\end{itemize}
+	
+	
+	\subsection{Sasquatch}	
+	Big 30.48cm
+	
+	\Characteristics{3}{2}{2}{2}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 14+Brawn
+		\item \textbf{Strain threshold:} 11+Will
+		\item \textbf{Starting Experience:} 95xp
+		\item \textbf{Starting Skills:} Start with one rank Athletics and one rank in Deception.
+		\item \textbf{Natural Weapons:} \textit{Claws}, Damage +2, Crit 4
+		\item \textbf{Uneducated} as per Shapeshifters (see \ref{uneducated}), skills cost like non-career skills to improve after character creation.
+		\item \textbf{Mimicry} add \BoostDie to Deception when impersonating sounds. Can learn two new languages for 5xp instead of one.
+	\end{itemize}
+\end{multicols}
+
+
+\section{Shapeshifters}
+\label{sec:shapeshifters}
+\begin{multicols}{2}
+Shapeshifters are awakened animals that can shift into a human form. They are animals and return to their natural form if killed or knocked unconscious. 
+
+Common for all shapeshifters is their ability to regenerate from wounds and a vulnerability to silver. Other abilities granted from their animal side are generally only active while in their natural form. Some abilities like low-light vision can be used in their human for as well.
+
+Gear and carried items do not transform and like other non-metahumans they can not benefit from cyberware or bioware. At the GM's discretion some highly specialised deltaware implants could work while they are in human form but operating on a creature that regenerates is at least daunting (\DifficultyDie \DifficultyDie \DifficultyDie \DifficultyDie).
+
+Lacking education means they have a harder time mastering skills but some talents can reduce this.
+
+All shapeshifters are awakened and cannot become technomancers.
+
+
+\begin{description}
+	\item[Regeneration] At the start of every turn during structured encounters roll an Average (\DifficultyDie \DifficultyDie) \emph{Resilience} check; recover 1 Wound for every net \Success and 1 strain per \Advantage. A \Triumph recovers 1 critical, starting with the lowest severity. Wounds or strain suffered from activating magic or magical powers, from damage caused by silver weapons, or from social skills do not regenerate this way.
+	\item[Shift] As an Action, the shapeshifter can shift between their animal and human form. While in animal form they gain +1 Brawn and +1 Agility or +1 Agility and the ability to fly if their animal form is capable of flying.
+	\item[Uneducated] \label{uneducated} After character creation, Shapeshifers pay XP for raising skills as if they all were non-career skills. Upgrade the difficulty when dealing with technology (or at the GM's discretion) unless the character has skill ranks in the relevant skill.  
+\end{description}
+
+\end{multicols}
+
+
+\begin{multicols}{2}
+	\subsection{Bear}
+	Ursine shapeshifters are large and burly.
+	
+	\Characteristics{3}{1}{1}{2}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 14+Brawn
+		\item \textbf{Strain threshold:} 8+Will
+		\item \textbf{Starting Experience:} 75xp
+		\item \textbf{Starting Skills:} Start with one rank Survival and one rank in Perception.
+		\item \textbf{Natural Weapons:} \textit{Bite}, Damage +2, Crit 3, Vicious 1; \textit{Claws}, Damage +4, Crit 4, Knockdown, Disorient 2
+		\item \textbf{Vomeronasal organ:} Add \BoostDie \BoostDie to skill checks to detect or track scent.
+		\item \textbf{Low-light vision:} Remove \SetbackDie \SetbackDie incurred from dim light.		
+	\end{itemize}
+
+	
+	\subsection{Great cat}	
+	Such as Tiger, Lions or even Jaguars.
+	
+	\Characteristics{3}{2}{1}{2}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 10+Brawn
+		\item \textbf{Strain threshold:} 8+Will
+		\item \textbf{Starting Experience:} 60xp
+		\item \textbf{Starting Skills:} Start with one rank Survival and one rank in Coordination.
+		\item \textbf{Natural Weapons:} \textit{Bite}, Damage +2, Crit 2, Vicious 2; \textit{Claws}, Damage +3, Crit 4, Pierce 1
+		\item \textbf{Balance receptor:} Add \BoostDie to Coordination checks.
+		\item \textbf{Low-light vision:} Remove \SetbackDie \SetbackDie incurred from dim light.		
+	\end{itemize}
+\end{multicols}
+
+\mbox{ }
+
+\begin{multicols}{2}
+	\subsection{Pird of prey}	
+	Falcons, Hawks, Eagles, etc.
+	
+	\Characteristics{1}{3}{2}{2}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 8+Brawn
+		\item \textbf{Strain threshold:} 10+Will
+		\item \textbf{Starting Experience:} 60xp
+		\item \textbf{Starting Skills:} Start with one rank Survival and one rank in Perception.
+		\item \textbf{Natural Weapons:} \textit{Beak and Claws}, Damage +2, Crit 3, Vicious 1
+		\item \textbf{Flight:} Can fly per the fly rules in Genesys core rulebook.
+		\item \textbf{Eagle Eyes:} Add \BoostDie to Perception checks and reduce difficulty to spot things above Medium Range by one.		
+	\end{itemize}
+
+	\subsection{Dog}	
+	Large dogs or Wolves.
+	
+	\Characteristics{2}{2}{2}{2}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 10+Brawn
+		\item \textbf{Strain threshold:} 10+Will
+		\item \textbf{Starting Experience:} 70xp
+		\item \textbf{Starting Skills:} Start with one rank Survival and one rank in Vigilance.
+		\item \textbf{Natural Weapons:} \textit{Bite}, Damage +2, Crit 3, Vicious 1, Knockdown
+		\item \textbf{Vomeronasal organ:} Add \BoostDie \BoostDie to skill checks to detect or track scent.		
+	\end{itemize}
+\end{multicols}
+\clearpage
+\mbox{ }
+
+\begin{multicols}{2}
+	\subsection{Fox}	
+	Foxes, weasels, etc.
+	
+	\Characteristics{1}{2}{2}{3}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 8+Brawn
+		\item \textbf{Strain threshold:} 10+Will
+		\item \textbf{Starting Experience:} 65xp
+		\item \textbf{Starting Skills:} Start with one rank Survival and one rank in Stealth.
+		\item \textbf{Natural Weapons:} \textit{Bite}, Damage +2, Crit 3, Vicious 1
+		\item \textbf{Vomeronasal organ:} Add \BoostDie \BoostDie to skill checks to detect or track scent.
+		\item \textbf{Keen eared:} Can ear wider range of sound and gets \BoostDie on sound based Perception and Vigilance checks.	
+	\end{itemize}
+	
+	\subsection{Horse}	
+	Horses but also large cervines or bovines.
+	
+	\Characteristics{3}{1}{2}{2}{2}{2}
+	\begin{itemize}
+		\item \textbf{Wound threshold:} 12+Brawn
+		\item \textbf{Strain threshold:} 10+Will
+		\item \textbf{Starting Experience:} 55xp
+		\item \textbf{Starting Skills:} Start with one rank Survival and one rank in Athletics.
+		\item \textbf{Natural Weapons:} \textit{Hooves}, Damage +2, Crit 5, Knockdown
+		\item \textbf{Beast of burden:} Increase encumbrance capacity by 5 and an additional 5 when in animal form (for a total of 15+Brawn).
+	\end{itemize}
+	
+\end{multicols}
+
+
 \section{Infected}
 
+\chapter{New Spells and effects}
+\section{Mind Control}
 
 
+\chapter{New Talents}
+\begin{multicols}{2}
+\section{Tier 1}
+\Talent{Rapid shift}{1}{Maneuver}{No} Can use the Shift power once per encounter as a Maneuver instead of Action.
+
+\Talent{Metahuman education}{1}{Passive}{Yes} When this talent is selected select 1 career skill. That skill no longer suffer the penalty from \textit{Uneducated} and now cost like a normal career skill to improve. Additional ranks in this talent adds two more career skills to be selected.
+
+\section{Tier 2}
+
+\section{Tier 3}
+\Talent{Daywalker}{3}{Passive}{No} WIP. Penalty reduction for sunlight.
+
+\section{Tier 4}
+
+\end{multicols}
+
+\chapter{New Gear}
+\begin{table}[H]
+	\caption{Ammunition}
+	\begin{GenesysTable}{| l | l | r | r | X |}
+		Name & Works with & Price & Rarity & Special\\
+		Silver bullets & Ranged guns that uses bullets. & 100 & 7 & Damage -1, Vicious 4 against targets vulnerable to silver.\\
+		Injection darts & Ranged(Light) & 75+toxin & 6 & Toxin effect are fun.
+	\end{GenesysTable}
+\end{table}
+
+
+\chapter{Index}
+\printindex
+
+
+%useless stuff below
+\clearpage
 This is a sample document for the \emph{Genesys} \LaTeX\ package. Please see below for the various commands.
 
 \section{Dice}
@@ -66,15 +343,16 @@ All dice types and symbols have their own commands:
 
 Tables are easy to use with the \verb|GenesysTable| environment. If you're using the \verb|\begin{table}| command to add a \verb|\caption{}| to the table that you add the \verb|[H]| optional argument or else the table will float to the nearest open space (the \verb|\begin{table}[H]| tells \LaTeX\ to put the table \textbf{right here}).
 
-\begin{table}[H]
-\caption{Sample Table}
+%\begin{table}[H]
+%\caption{Sample Table}
 \begin{GenesysTable}{l X}
 Heading & Long Heading\\
+\RowColors
 Table line one & with the second column in blue!\\
 And here's & the second line, with white background!\\
 Last line & again in blue\\
 \end{GenesysTable}
-\end{table}
+%\end{table}
 
 \section{Characters}
 
