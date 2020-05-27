@@ -1,5 +1,6 @@
 \documentclass{book}
 
+%\usepackage{genesys}
 \usepackage[background]{genesys}
 \usepackage{graphicx}
 \usepackage{wrapfig}
@@ -8,6 +9,7 @@
 \usepackage{hyperref}
 \usepackage{tabu}
 \usepackage{caption}
+\usepackage[T1]{fontenc}
 \usepackage{float}
 \hypersetup{
 	colorlinks=true,
@@ -17,7 +19,7 @@
 }
 
 \makeindex
-%\geometry{paperheight=13in}
+
 \begin{document}
 
 \begin{center}
@@ -31,20 +33,10 @@
 	\large For Shadowrun Genesys conversion by Chaithi/Surukai
 \end{center}
 
-
-
-
 \chapter{Introduction}
-%\begin{wrapfigure}{r}{0.5\textwidth}
-%	\begin{center}
-%	\includegraphics[width=1.0\linewidth]{"images/SR5_Gun Battle"}
-%	\end{center}
-%	\caption{Gun battle}
-%\end{wrapfigure}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\linewidth]{"images/SR5_City_Berlin"}
-%	\caption{}
 	\label{fig:sr5gun-battle}
 \end{figure}
 
@@ -65,7 +57,7 @@ It is also possible to use \textit{surukai@gmail.com}
 	\item[--] Angelswing
 	\item[--] Caweman
 	\item[--] Tess
-	\item[--] RL
+	\item[--] Ivaion
 \end{itemize}
 
 \end{multicols}
@@ -92,6 +84,7 @@ copyright.
 The new archetypes here are based on the metavariants, metasapients and others found in \textbf{Run Faster} for Shadowrun 5th edition or \textbf{Runner's Companion} (Shadowrun 4). Some updates of abilities are taken from Shadowrun 6th edition like Vampire being vulnerable to wood instead of silver.
 
 \section{Metasapients}
+\label{sec:metasapients}
 Metasapients\index{Metasapients} are all non-metahumans and can generally not benefit from cyberware or bioware unless they are of exceptionally high quality and customization. Some metasapients are awakened and cannot become technomancers.
 
 \begin{multicols}{2}
@@ -158,7 +151,7 @@ Metasapients\index{Metasapients} are all non-metahumans and can generally not be
 
 
 \section{Shapeshifters}
-\label{sec:shapeshifters}
+\label{sec:shapeshifters}\index{Shapeshifter}
 \begin{multicols}{2}
 Shapeshifters are awakened animals that can shift into a human form. They are animals and return to their natural form if killed or knocked unconscious. 
 
@@ -172,8 +165,8 @@ All shapeshifters are awakened and cannot become technomancers.
 
 
 \begin{description}
-	\item[Regeneration] At the start of every turn during structured encounters roll an Average (\DifficultyDie \DifficultyDie) \emph{Resilience} check; recover 1 Wound for every net \Success and 1 strain per \Advantage. A \Triumph recovers 1 critical, starting with the lowest severity. Wounds or strain suffered from activating magic or magical powers, from damage caused by silver weapons, or from social skills do not regenerate this way.
-	\item[Shift] As an Action, the shapeshifter can shift between their animal and human form. While in animal form they gain +1 Brawn and +1 Agility or +1 Agility and the ability to fly if their animal form is capable of flying.
+	\item[Regeneration]\index{Regeneration} At the start of every turn during structured encounters roll an Average (\DifficultyDie \DifficultyDie) \emph{Resilience} check; recover 1 Wound for every net \Success and 1 strain per \Advantage. A \Triumph recovers 1 critical, starting with the lowest severity. Wounds or strain suffered from activating magic or magical powers, from damage caused by silver weapons, or from social skills do not regenerate this way.
+	\item[Shift]\index{Shift} As an Action, the shapeshifter can shift between their animal and human form. While in animal form they gain +1 Brawn and +1 Agility or +1 Agility and the ability to fly if their animal form is capable of flying.
 	\item[Uneducated] \label{uneducated} After character creation, Shapeshifers pay XP for raising skills as if they all were non-career skills. Upgrade the difficulty when dealing with technology (or at the GM's discretion) unless the character has skill ranks in the relevant skill.  
 \end{description}
 
@@ -181,7 +174,7 @@ All shapeshifters are awakened and cannot become technomancers.
 
 
 \begin{multicols}{2}
-	\subsection{Bear}
+	\subsection{Bear}\index{Shapeshifter!Bear}
 	Ursine shapeshifters are large and burly.
 	
 	\Characteristics{3}{1}{1}{2}{2}{2}
@@ -245,7 +238,7 @@ All shapeshifters are awakened and cannot become technomancers.
 \mbox{ }
 
 \begin{multicols}{2}
-	\subsection{Fox}	
+	\subsection{Fox}\index{Shapeshifter!Fox}	
 	Foxes, weasels, etc.
 	
 	\Characteristics{1}{2}{2}{3}{2}{2}
@@ -259,7 +252,7 @@ All shapeshifters are awakened and cannot become technomancers.
 		\item \textbf{Keen eared:} Can ear wider range of sound and gets \BoostDie on sound based Perception and Vigilance checks.	
 	\end{itemize}
 	
-	\subsection{Horse}	
+	\subsection{Horse}\index{Shapeshifter!Horse}
 	Horses but also large cervines or bovines.
 	
 	\Characteristics{3}{1}{2}{2}{2}{2}
@@ -276,19 +269,20 @@ All shapeshifters are awakened and cannot become technomancers.
 
 
 \section{Infected}
+To be decided, how to do etc.
 
-\chapter{New Spells and effects}
-\section{Mind Control}
 
 
 \chapter{New Talents}
 \begin{multicols}{2}
 \section{Tier 1}
-\Talent{Rapid shift}{1}{Maneuver}{No} Can use the Shift power once per encounter as a Maneuver instead of Action.
+\Talent{Rapid shift}{1}{Maneuver}{No} Can use the Shift power as a Maneuver instead of Action.
 
-\Talent{Metahuman education}{1}{Passive}{Yes} When this talent is selected select 1 career skill. That skill no longer suffer the penalty from \textit{Uneducated} and now cost like a normal career skill to improve. Additional ranks in this talent adds two more career skills to be selected.
+
 
 \section{Tier 2}
+
+\Talent{Metahuman education}{2}{Passive}{Yes} When this talent is selected select 1 career skill. That skill no longer suffer the penalty from \textit{Uneducated} and now cost like a normal career skill to improve. Additional ranks in this talent adds two more career skills to be selected.
 
 \section{Tier 3}
 \Talent{Daywalker}{3}{Passive}{No} WIP. Penalty reduction for sunlight.
@@ -300,87 +294,41 @@ All shapeshifters are awakened and cannot become technomancers.
 \chapter{New Gear}
 \begin{table}[H]
 	\caption{Ammunition}
-	\begin{GenesysTable}{| l | l | r | r | X |}
+	\begin{GenesysTable}{ l l r r X}
+ 	\RowColors
 		Name & Works with & Price & Rarity & Special\\
 		Silver bullets & Ranged guns that uses bullets. & 100 & 7 & Damage -1, Vicious 4 against targets vulnerable to silver.\\
 		Injection darts & Ranged(Light) & 75+toxin & 6 & Toxin effect are fun.
 	\end{GenesysTable}
 \end{table}
 
+\chapter{Lifestyle and living}
 
-\chapter{Index}
 \printindex
 
+\appendix
+\section{Changelog}
+\begin{description}
+	\item[2020-05-26] Initial version, with Metasapients (\ref{sec:metasapients}) and Shapeshifters (\ref{sec:shapeshifters}) 
+\end{description}
 
-%useless stuff below
-\clearpage
-This is a sample document for the \emph{Genesys} \LaTeX\ package. Please see below for the various commands.
+\section{Design Notes}
+\begin{multicols}{2}[Loose ramblings on design notes and rationales used to justify the conversions follow here.]
+\subsection{Regeneration and Uneducated power level}
+At first glance, the ability to have near infinite wounds and strain is hard to balance. Some limitations were needed and just like the source material, regeneration can't be used to fuel spellcasting or adept powers. Regeneration is valued to be worth excess of 50 xp and that is why the Uneducated (\ref{uneducated}) drawback is so big. To not make it just a drawback at character creation it was made to act like a skill tax of sort to try keep shapeshifters in line from low to high XP.
 
-\section{Dice}
+At higher xp levels healing, strain and criticals are not considered an issue outside combat. With the \textbf{heal} spell able to recover both wounds and strain, including all but 2 of the strain used to cast the last instance of the spell there is no reason to overvalue \textbf{Regenration} for any group of Player Characters that want to sustain a lot of damage. Add to that the 15 extra wounds per day gained from \textit{slap patches} and large amounts of strain recovered from \textit{stim patches} in a pinch the regeneration power is not outshining classical Medicine or healing magic by any stretch of the imagination.
 
-All dice types and symbols have their own commands:
+\subsection{Artificial Intelligence}
+I tried  here to give them some kind of place, but the playability limitations of being essentiallly a pidgeon-holed Rigger that is never with the team is a tough one. Design wise it is a terrible character concept and frankly A.I. have never been very playable as player characters. It is much easier to fit an infected character in a runner team than one that is worse than the Brawn 1 rigger that refuses to leave his Soak 20 car and never joins the team...
 
-\begin{multicols}{2}
+\subsection{Pixies?}
+Just nope; if godlike stats on a tiny invisible creature with a .50 BMG anti material rifle that a 2ft pixie somehow can use without penalty floats your boat have at it. I can't care less that your 8 agility, reaction and 7+ in \textbf{ALL} mental stats race doesn't fit in. The Pixie Genesys equivalent statline of Brawn 1, Agility 3, Cunning 3, Logic 3, Willpower 3 and Presence 3, flying invisible, astral perception archetype is too expensive, sorry!
 
-\begin{itemize}[noitemsep,nolistsep]
-\item \verb|\BoostDie| produces \BoostDie
-\item \verb|\AbilityDie| produces \AbilityDie
-\item \verb|\ProficiencyDie| produces \ProficiencyDie
-\item \verb|\SetbackDie| produces \SetbackDie
-\item \verb|\DifficultyDie| produces \DifficultyDie
-\item \verb|\ChallengeDie| produces \ChallengeDie
-\item \verb|\Advantage| produces \Advantage
-\item \verb|\Success| produces \Success
-\item \verb|\Triumph| produces \Triumph
-\item \verb|\Threat| produces \Threat
-\item \verb|\Failure| produces \Failure
-\item \verb|\Despair| produces \Despair
-\end{itemize}
+\subsection{Changelings}
+Furry eh? Jokes aside, I'm working on it, but with the vast amount of combinations possible it might be a character archetype that requires a lot of moving parts for what ultimately becomes somewhat minor effects in the end. Changelings are supposed to be the victims of the '64 comet, not the ultimate optimization option. For cosmetic and minor effects it is probably a much better path to take to make a \textbf{Human} character with animal looks. Some things like \textit{low-light vision} or \textit{natural weapons} could be traded for some animal related drawback. Keep in mind though that we try to minimize the circus freak equivalents of Shadowrun's \textit{negative qualitues} lists. 
+
+\hfill{}
 
 \end{multicols}
-
-\section{Tables}
-
-Tables are easy to use with the \verb|GenesysTable| environment. If you're using the \verb|\begin{table}| command to add a \verb|\caption{}| to the table that you add the \verb|[H]| optional argument or else the table will float to the nearest open space (the \verb|\begin{table}[H]| tells \LaTeX\ to put the table \textbf{right here}).
-
-%\begin{table}[H]
-%\caption{Sample Table}
-\begin{GenesysTable}{l X}
-Heading & Long Heading\\
-\RowColors
-Table line one & with the second column in blue!\\
-And here's & the second line, with white background!\\
-Last line & again in blue\\
-\end{GenesysTable}
-%\end{table}
-
-\section{Characters}
-
-When you are making stat blocks for NPCs, be sure to use the \verb|\Characteristics| command which takes 6 arguments, once for each characteristic. \verb|\Characteristics{1}{3}{2}{2}{2}{2}| grants:
-
-\vspace{1em}
-
-\Characteristics{1}{3}{2}{2}{2}{2}
-\vspace{1em}
-
-
-\vspace{1em}
-
-
-Lastly, we have the derived numbers: soak, WT and ST. Use the \verb|\Derived| command, with two arguments?one for the title and the second for the number. For Melee/Ranged defense, we use \verb|\DerivedSplit| with 5 arguments: title, first number, second number, first subtitle and second subtitle. Using \verb|\Derived{Soak}{4}| and \verb|\DerivedSplit{Defense}{2}{0}{Melee}{Ranged}|, for instance, gives us:
-
-\vspace{1em}
-
-\hspace*{\fill}\Derived{Soak}{4}\qquad\DerivedSplit{Defense}{2}{0}{Melee}{Ranged}\hspace*{\fill}
-
-\section{Talents}
-
-There is now a \verb|\Talent| command that takes 4 arguments. \verb|\Talent{talent name}{tier}{activation}{ranked?}|. 
-
-\verb|\Talent{Grit}{1}{Passive}{Yes}| would give you: 
-
-\Talent{Grit}{1}{Passive}{Yes}
-
-
-
 \end{document}

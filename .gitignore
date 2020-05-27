@@ -4,3 +4,6 @@ Shadowrun-Genesy_extra.pdf
 Shadowrun-Genesy_extra.synctex.gz
 Shadowrun-Genesy_extra.synctex.gz
 *.aux
+*.idx
+*.out
+*.toc
