@@ -171,7 +171,8 @@ All shapeshifters are awakened and cannot become technomancers.
 
 
 \begin{description}
-	\item[Regeneration]\index{Regeneration} At the start of every turn during structured encounters roll an Average (\DifficultyDie \DifficultyDie) \emph{Resilience} check; recover 1 Wound for every net \Success\ and 1 strain per \Advantage. A \Triumph\ recovers 1 critical, starting with the lowest severity. Wounds or strain suffered from activating magic or magical powers, from damage caused by silver weapons, or from social skills do not regenerate this way.
+	\item[Regeneration]\index{Regeneration} At the start of every turn during structured encounters roll an Average (\DifficultyDie \DifficultyDie) \emph{Resilience} check; recover 1 Wound for every net \Success\ and 1 strain per \Advantage. A \Triumph\ recovers 1 critical, starting with the lowest severity. Only wounds suffered from attacks or getting hurt regenerate this way. Strain or wounds from activating abilities, fear or social skills do not regenerate.
+	\item[Vulnerability: Silver] Shapeshifters are vulnerable to silver and cannot regenerate wounds or strain caused by silver weapons. See the weapon entry on \ref{silver} for more information.
 	\item[Shift]\index{Shift} As an Action, the shapeshifter can shift between their animal and human form. While in animal form they gain +1 Brawn and +1 Agility or +1 Agility and the ability to fly if their animal form is capable of flying.
 	\item[Uneducated] \label{uneducated} After character creation, Shapeshifers pay XP for raising skills as if they all were non-career skills. Upgrade the difficulty when dealing with technology (or at the GM's discretion) unless the character has skill ranks in the relevant skill.  
 \end{description}
@@ -295,19 +296,22 @@ To be decided, how to do etc.
 
 \section{Tier 4}
 
+\section{Tier 5}
+
+
 \end{multicols}
 
 \chapter{New Gear}
 \section{Weapon mods and ammunition}
 \begin{multicols}{2}
-	\subsection{Silver bullets}
+	\subsection{Silver bullets}\label{silver}\index{Silver bullets}
 	Bullets with silver jacket or made from alloys with high enough silver content to work against creatures vulnerable to silver such as shapeshifters. The lower density of the bullet reduces the effectiveness against regular targets. Silver bullets are only effective in weapons that fire bullets.
 	
 	\subsection{Injection darks}
 	Injection darts can be used to deliver injection based toxins or drugs. WIP
 	
 	\subsection{Seven-7}
-	Target must make an immediate Daunting (\DifficultyDie[4]) Resillience check or suffer 10 wounds and become \textit{Staggered} for 3 rounds. \Advantage\ can be used to reduce the damage and duration of the stagger and replace with with Disorientation instead. 
+	Target must make an immediate Daunting (\DifficultyDie \DifficultyDie \DifficultyDie \DifficultyDie) Resillience check or suffer 10 wounds and become \textit{Staggered} for 3 rounds. \Advantage\ can be used to reduce the damage and duration of the stagger and replace with with Disorientation instead. 
 	
 	\subsection{Dragon's breath shells}
 	Dragons breath turns a shotgun into a makeshift flamethrower. The shell fires a concentrated stream of fire up to short range. Using dragon's breath shells temporarily removes blast and knockdown from the base weapon. 
@@ -351,6 +355,33 @@ To be decided, how to do etc.
 	\item[2020-05-26] Initial version, with Metasapients (\ref{sec:metasapients}) and Shapeshifters (\ref{sec:shapeshifters}) 
 \end{description}
 
+\section{House rules}
+\begin{multicols}{2} Below follows some changes and additions that are probably less general and more suited for \textbf{Surukai's} gaming group but feel free to use any or all of them.
+
+\subsection{Spending Advantage and Threat}
+While not explicitly stated, unless otherwise noted each entry can only be bought once. For example recovering strain or giving out \BoostDie\ can only be done once. 
+
+\subsection{Cyberware, augmentation, and talent stacking}
+Not a house rule per se but a clarification. Not all augmentations stack with each other. For example Bone lacing and Bone Density or multiple abilities that modify the character's skin (Troll natural armor and Othoskin). 
+
+%Augmentations do not always stack and getting the same bonus from multiple sources do not always stack. Examples include getting +Soak from both talents and cyberware or taking multiple talents or cyberware or magic to add damage to attacks or maneuvers. 
+
+%A general rule of thumb is that limited use bonuses gained from for example attacking unaware targets, spending story points or only occuring when a narrow condition is met generally works together with talents, magic or cyberware that provides a bonus as long as they don't trigger on the same condition or add damage based on ranks in a skill  more than once.
+
+%\textit{Example} Armor Master Talent adds +1 Soak and Electrical Insulation adds +2 Soak but only against Electrical attack, this stacks. Orthoskin cyberware does not stack with Troll thick hide or Enduring (Tier 4) talent. 
+
+%\textit{Example 2} Damage from backstab works with Feral Strength but Street Fighter adding damage per rank in Skullduggery does not stack with Pressure Point adding damage per rank in Medicine since adding damage from ranks in a skill is already done.
+
+\subsection{Changed talents}
+\Talent{Power of Darkness (alternate)}{5}{Maneuver}{No} Once per session, take the Power of Darkness maneuver to make you and all allies within medium range recover two wound and one strain for every Story Point missing from the Player pool. %TODO wording and keywords
+
+\Talent{Enduring}{4}{Passive}{No} Enduring increases your character's soak by 1. You can only select this talent if you have Essence of 6.
+
+\Talent{Deadly Accuracy}{4}{Passive}{Yes} What? No... there are too many +damage per ranks in skill talents already, no need for a generic always on superior version without any cost.
+
+
+\end{multicols}
+	
 \section{Design Notes}
 \begin{multicols}{2}[Loose ramblings on design notes and rationales used to justify the conversions follow here.]
 \subsection{Regeneration and Uneducated power level}
@@ -366,6 +397,11 @@ Just nope; if godlike stats on a tiny invisible creature with a .50 BMG anti mat
 
 \subsection{Changelings}
 Furry eh? Jokes aside, I'm working on it, but with the vast amount of combinations possible it might be a character archetype that requires a lot of moving parts for what ultimately becomes somewhat minor effects in the end. Changelings are supposed to be the victims of the '64 comet, not the ultimate optimization option. For cosmetic and minor effects it is probably a much better path to take to make a \textbf{Human} character with animal looks. Some things like \textit{low-light vision} or \textit{natural weapons} could be traded for some animal related drawback. Keep in mind though that we try to minimize the circus freak equivalents of Shadowrun's \textit{negative qualitues} lists. 
+
+\subsection{Spending  Advantage and Threat only once}
+Talents like \textbf{Master} and other ways to recovery Strain suggest that rolling 4-5 \Advantage\ and getting an instant refill on Strain is not intended. The same goes for threat. Nemesis enemies with \textit{Advesary} can just cash in on threat and advantage to knock out PCs. Even more importantly, Genesys offers so much better and more interesting ways to handle structured encounters if the \textit{First Order Optimization} of either tossing handfuls of \BoostDie\ around or having near infinite Strain to spend are discouraged. 
+
+Why cause a critical with some unreliable debuff to the boss when \mbox{\BoostDie \BoostDie \BoostDie \BoostDie \BoostDie} given to your damage dealer will oneshot anything and never miss? 
 
 \hfill{}
 
