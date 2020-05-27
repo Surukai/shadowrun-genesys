@@ -47,10 +47,14 @@ For more information on the base Genesys Shadowrun conversion, see \url{https://
 
 The purpose of this document is to add/suggest new features and parts in addition to add items used for the \textit{Boston Lockdown} campaign book.
 
+Genesys \LaTeX\ template by c-bec-k, found at \url{https://github.com/c-bec-k/GenesysRPG}
+
 \subsection{Contact}
 Surukai can be reached over at Chaithi's Shadowrun Genesys discord or directly at \textbf{Surukai\#2470} \index{Author}
 
-It is also possible to use \textit{surukai@gmail.com}
+It is also possible to use \textit{surukai@gmail.com} but the preferred method is to join Chaithi's discord. 
+
+Discord server: \url{https://discord.gg/EMnSqkB}\index{Discord server}
 
 \subsection{Game testers}
 \begin{itemize}[noitemsep]
@@ -59,6 +63,8 @@ It is also possible to use \textit{surukai@gmail.com}
 	\item[--] Tess
 	\item[--] Ivaion
 \end{itemize}
+
+
 
 \end{multicols}
 
@@ -165,7 +171,7 @@ All shapeshifters are awakened and cannot become technomancers.
 
 
 \begin{description}
-	\item[Regeneration]\index{Regeneration} At the start of every turn during structured encounters roll an Average (\DifficultyDie \DifficultyDie) \emph{Resilience} check; recover 1 Wound for every net \Success and 1 strain per \Advantage. A \Triumph recovers 1 critical, starting with the lowest severity. Wounds or strain suffered from activating magic or magical powers, from damage caused by silver weapons, or from social skills do not regenerate this way.
+	\item[Regeneration]\index{Regeneration} At the start of every turn during structured encounters roll an Average (\DifficultyDie \DifficultyDie) \emph{Resilience} check; recover 1 Wound for every net \Success\ and 1 strain per \Advantage. A \Triumph\ recovers 1 critical, starting with the lowest severity. Wounds or strain suffered from activating magic or magical powers, from damage caused by silver weapons, or from social skills do not regenerate this way.
 	\item[Shift]\index{Shift} As an Action, the shapeshifter can shift between their animal and human form. While in animal form they gain +1 Brawn and +1 Agility or +1 Agility and the ability to fly if their animal form is capable of flying.
 	\item[Uneducated] \label{uneducated} After character creation, Shapeshifers pay XP for raising skills as if they all were non-career skills. Upgrade the difficulty when dealing with technology (or at the GM's discretion) unless the character has skill ranks in the relevant skill.  
 \end{description}
@@ -292,23 +298,56 @@ To be decided, how to do etc.
 \end{multicols}
 
 \chapter{New Gear}
-\begin{table}[H]
+\section{Weapon mods and ammunition}
+\begin{multicols}{2}
+	\subsection{Silver bullets}
+	Bullets with silver jacket or made from alloys with high enough silver content to work against creatures vulnerable to silver such as shapeshifters. The lower density of the bullet reduces the effectiveness against regular targets. Silver bullets are only effective in weapons that fire bullets.
+	
+	\subsection{Injection darks}
+	Injection darts can be used to deliver injection based toxins or drugs. WIP
+	
+	\subsection{Seven-7}
+	Target must make an immediate Daunting (\DifficultyDie[4]) Resillience check or suffer 10 wounds and become \textit{Staggered} for 3 rounds. \Advantage\ can be used to reduce the damage and duration of the stagger and replace with with Disorientation instead. 
+	
+	\subsection{Dragon's breath shells}
+	Dragons breath turns a shotgun into a makeshift flamethrower. The shell fires a concentrated stream of fire up to short range. Using dragon's breath shells temporarily removes blast and knockdown from the base weapon. 
+	
+\end{multicols}
+
+\begin{table}[h]
 	\caption{Ammunition}
 	\begin{GenesysTable}{ l l r r X}
  	\RowColors
 		Name & Works with & Price & Rarity & Special\\
 		Silver bullets & Ranged guns that uses bullets. & 100 & 7 & Damage -1, Vicious 4 against targets vulnerable to silver.\\
-		Injection darts & Ranged(Light) & 75+toxin & 6 & Toxin effect are fun.
+		Injection darts & Ranged(Light) & 75+toxin & 6 & WIP, injection toxins.\\
+		Dragon's Breath & Shotgun & 25 & 6 & Limited ammo 1, Burn 2, \textit{removes blast and knockdown}\\
+		Seven-7 Gas & Grenades or warheads & 1000 & 8(R) & Seven-7 toxin, \Advantage[3] to spread effect to all targets in short range. 
 	\end{GenesysTable}
 \end{table}
 
-\chapter{Lifestyle and living}
+\begin{table}[h]
+	\caption{Weapon Mods}
+	\begin{GenesysTable}{ l l r r r X}
+		\RowColors
+		Name & Works with & Hardpoints & Price & Rarity & Special\\
+		Silver weapon & Any melee & 1 & 500 & 7 & Adds vicious 4 or increases vicious by +2 vs targets vulnerable to silver		
+	\end{GenesysTable}
+\end{table}
+
+%\section{Electronics}
+
+
+
+%\chapter{Lifestyle and living}
 
 \printindex
 
 \appendix
+\chapter{Misc}
 \section{Changelog}
 \begin{description}
+	\item[2020-05-27] A.I. and some weapon mods, skeleton stuff of things.
 	\item[2020-05-26] Initial version, with Metasapients (\ref{sec:metasapients}) and Shapeshifters (\ref{sec:shapeshifters}) 
 \end{description}
 
