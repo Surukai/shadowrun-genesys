@@ -63,6 +63,7 @@ Discord server: \url{https://discord.gg/EMnSqkB}\index{Discord server}
 	\item[--] Caweman
 	\item[--] Tess
 	\item[--] Ivaion
+	\item[--] Luffarn
 \end{itemize}
 
 
@@ -539,22 +540,21 @@ Infected need to feed on metahuman flesh or blood to stay alive. Every month of 
 \chapter{New Talents}
 \begin{multicols}{2}
 \section{Tier 1}
-\Talent{Rapid shift}{1}{Maneuver}{No} Can use the Shift power as a Maneuver instead of Action.
+\Talent{Rapid shift}{1}{Maneuver}{No} \textit{(Shapeshifter)} Can use the Shift power as a Maneuver instead of Action.
 
 
 \section{Tier 2}
 
-\Talent{Metahuman education}{2}{Passive}{Yes} When this talent is selected select 1 career skill. That skill no longer suffer the penalty from \textit{Uneducated} and now cost like a normal career skill to improve. Additional ranks in this talent adds two more career skills to be selected.
+\Talent{Metahuman education}{2}{Passive}{Yes} \textit{(Shapeshifter)} When this talent is selected select 1 career skill. That skill no longer suffer the penalty from \textit{Uneducated} and now cost like a normal career skill to improve. Additional ranks in this talent adds two more career skills to be selected.
 
-\Talent{Resonance Scream}{2}{Maneuver}{Yes} WIP. Add "noise" (onme \SetbackDie per ank) to area, including the technomancer within medium range until the end of the encounter.
-
+\Talent{Resonance Scream}{2}{Maneuver}{Yes} \textit{(Technomancer)} Upgrade the difficulty for all actions using DNI for everyone within short range until the end of your character's next turn. Additional ranks increases the range. The difficulty added includes weapons with Smartlink, remote controlled drones, etc.
 
 \section{Tier 3}
-\Talent{Daywalker}{3}{Passive}{No} WIP. Penalty reduction for sunlight.
+%\Talent{Daywalker}{3}{Passive}{No} WIP. Penalty reduction for sunlight.
 
-\Talent{Fear}{3}{Incidental}{No} Can only be selected by Banshee, Nosferatu or Wendigo characters. You may add the \textit{Terror} effect on the \textit{Mask} spell without increasing the difficulty.
+\Talent{Fear}{3}{Incidental}{No} \textit{(Infected)} Can only be selected by Banshee, Nosferatu or Wendigo characters. You may add the \textit{Terror} effect on the \textit{Mask} spell without increasing the difficulty.
 
-\Talent{Man-Machine Resonance Interrface}{3}{Passive}{No} WIP Technomancer Control Rig echo.
+%\Talent{Man-Machine Resonance Interface}{3}{Passive}{No} WIP Technomancer Control Rig echo.
 
 
 \section{Tier 4}
@@ -564,16 +564,15 @@ Infected need to feed on metahuman flesh or blood to stay alive. Every month of 
 
 Regeneration can only recover wounds and strain suffered from damage, not wounds or strain used to activate magic, abilities or from social skills.
 
-\Talent{Sleepwalker}{4}{Passive}{No} WIP Technomancer no longer goes limp in full VR and may perform maneuvers and Vigilance Checks in the meatspace while in VR. (Checks affecting the meatspace don't gain benefits from Hot Sim)
+\Talent{Sleepwalker}{4}{Passive}{No} (\textit{Technomancer}) The character longer goes limp in full VR and may perform move maneuvers and Vigilance Checks in the meatspace while in VR. (Checks affecting the meatspace don't gain benefits from Hot Sim). 
 
 \section{Tier 5}
-\Talent{Mist Form}{5}{Action}{No} Can only be taken by Vampire or Banshee characters. Mist form allows your character to transform into a cloud of mist until the end of the encounter or about 5 minutes of narrative play. While in mist form all damage is reduce by 10 (to a minimum of 1) after soak is applied. 
+\Talent{Mist Form}{5}{Action}{No} \textit{(Infected)} Can only be taken by Vampire or Banshee characters. Mist form allows your character to transform into a cloud of mist until the end of the encounter or about 5 minutes of narrative play. While in mist form all damage is reduce by 10 (to a minimum of 1) after soak is applied. 
 
 Use of Mist form reduces the characters essence by one. Basic clothing and magical foci transform with your character but other weapons and items generally do not.
 
 \Talent{Rengeration (Improved)}{5}{Menuver}{No} \index{Regeneration!Talent improved} 
 Once per turn; you may perform the Regeneration action as a Maneuver instead of an action.
-
 
 \end{multicols}
 
@@ -584,7 +583,7 @@ Once per turn; you may perform the Regeneration action as a Maneuver instead of 
 	Bullets with silver jacket or made from alloys with high enough silver content to work against creatures vulnerable to silver such as shapeshifters. The lower density of the bullet reduces the effectiveness against regular targets. Silver bullets are only effective in weapons that fire bullets.
 	
 	\subsection{Injection darts}
-	Injection darts can be used to deliver injection based toxins or drugs. WIP
+	Injection darts can be loaded in most Ranged (Light) weapons and comes in packs of 4. Targets that get hit equal to or past their soak must make a Hard (\DifficultyDie \DifficultyDie \DifficultyDie) Resilience check or suffer 3 wounds and 3 strain, reduced by hits on the test. Multiple hits increase the difficulty instead.
 	
 	\subsection{Seven-7}
 	Target must make an immediate Daunting (\DifficultyDie \DifficultyDie \DifficultyDie \DifficultyDie) Resillience check or suffer 10 wounds and become \textit{Staggered} for 3 rounds. \Advantage\ can be used to reduce the damage and duration of the stagger and replace with with Disorientation instead. 
@@ -592,18 +591,19 @@ Once per turn; you may perform the Regeneration action as a Maneuver instead of 
 	Seven-7 is both a contact and gas based neurotoxin and while respiratory protection works at a distance, targets directly hit with Seven-7 suffers the effects unless they are completely protected.
 	
 	\subsection{Dragon's breath shells}
-	Dragons breath turns a shotgun into a makeshift flamethrower. The shell fires a concentrated stream of fire up to short range. Using dragon's breath shells temporarily removes blast and knockdown from the base weapon. 
+	Dragons breath turns a shotgun into a makeshift flamethrower. The shell fires short a concentrated stream of fire up to short range, regardless of choke settings.
 	
 \end{multicols}
 
+\label{ammunition}
 \begin{table}[h]
-	\caption{Ammunition}
+	\caption{ammunition}
 	\begin{GenesysTable}{ l l r r X}
  	\RowColors
 		Name & Works with & Price & Rarity & Special\\
 		Silver bullets & Ranged guns that uses bullets. & 100 & 7 & Damage -1, Vicious 4 against targets vulnerable to silver.\\
-		Injection darts & Ranged(Light) & 75+toxin & 6 & WIP, injection toxins.\\
-		Dragon's Breath & Shotgun & 25 & 6 & Limited ammo 1, Burn 2, \textit{removes blast and knockdown}\\
+		Injection dart & Ranged(Light) & 100 & 6 & Limited ammo 4, Damage -3, Pierce 2 (or increase pierce by 1), Toxin\\
+		Dragon's Breath & Shotgun & 25 & 6 & Limited ammo 1, Burn 2, \textit{incompatible with choke}\\
 		Seven-7 Gas & Grenades or warheads & 1000 & 8(R) & Seven-7 toxin, \Advantage \Advantage \Advantage to spread effect to all targets in short range. 
 	\end{GenesysTable}
 \end{table}
@@ -619,9 +619,26 @@ Once per turn; you may perform the Regeneration action as a Maneuver instead of 
 
 \section{Electronics}
 
+\chapter{Lifestyle and living}
+How can you afford your rock'n'roll lifestyle? You can pay for it, user favors or fake it. Lifestyle is an abstraction of living costs for a Shadowrunner and is meant to replace the need to keep track of rent, food, clothes but also a way to show status or feel safe.
 
+\textcolor{tablegold}{Glurkburk } 
 
-%\chapter{Lifestyle and living}
+\section{Example lifestyles}
+
+\RowColors
+\begin{tabular}{ l r r l }
+	\rowcolor{tablegold}
+	\color{white}\textbf{Lifestyle} & Price & Rarity & Effect on healing\\
+	\hline
+	Street & 0 & - & Upgrade difficulty twice\\		
+	Squatter & 100 & 1 & Upgrade difficulty once \\				
+	Low & 200 & 2 & \SetbackDie \SetbackDie \\
+	Medium & 500 & 4 & none \\
+	High & 1000 & 6 & \BoostDie \BoostDie \\
+	Luxury & 5000 & 8 & Upgrade ability once \\		
+\end{tabular}
+
 
 \printindex
 
@@ -629,6 +646,7 @@ Once per turn; you may perform the Regeneration action as a Maneuver instead of 
 \chapter{Misc}
 \section{Changelog}
 \begin{description}
+	\item[2021-12-10] Buffed Dragon's breath (\ref{ammunition}) and simplified toxin darts.
 	\item[2020-05-31] A.I. and some weapon mods, skeleton, changed regeneration wording etc. Added Infected \pageref{sec:gettinginfected} for Strain I, III and a little bit of II. New house rule for Trodes to make Datajack at least a little bit useful instead of more than 10x the price for literally no benefit (This problem exists in the source material too, no shade over the SR conversion.)
 	\item[2020-05-26] Initial version, with Metasapients (p. \pageref{sec:metasapients}) and Shapeshifters (p. \pageref{sec:shapeshifters}) 
 \end{description}
